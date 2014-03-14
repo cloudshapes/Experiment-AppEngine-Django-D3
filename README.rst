@@ -19,13 +19,10 @@ Finally, you need to copy the "master.json" file into the "djappengine" folder, 
 At this point, you *should* be ready to go.
 
 From the command line type:
-```
-cd /home/me/djappengine
-```
 
-```
-./serve &
-```
+    cd /home/me/djappengine
+    ./serve &
+
 
 And then, you should be able to see the result of your handiwork at http://localhost:8080/. 
 You will need a username/password to login, which is "amn/p00t!".

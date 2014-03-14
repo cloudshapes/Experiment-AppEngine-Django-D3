@@ -7,7 +7,7 @@
 	{% block main_body %}
 		<h2>What Is This?</h2>
 		<p>A little demonstration app running on Google App Engine, using Django/Python as the framework, and using D3js to do the visualisation.</p>
-		<p><b>Please note:</b> best viewed on a Desktop in Chrome, IE and Safari. But not Firefox. Firefox isn't great with rendering SVG. Need to be HTML5 ready browsers.</p>
+		<p><b>Please note:</b> best viewed on a Desktop in Chrome, IE and Safari. But not Firefox. Firefox isn't great with rendering SVG.</p>
 
 		<h2>What Can You Do?</h2>
 		<p>You can add/edit/delete bits of text at <a href="/amn/" title="Edit Pages">/amn/</a>. You'll need a Google account/login.</p>

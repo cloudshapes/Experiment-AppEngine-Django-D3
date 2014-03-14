@@ -1,0 +1,115 @@
+
+
+def word_wrap(source_str):
+	width = textdisplay_settings.TD_COLUMN_WIDTH
+
+	regstr = '.{1,' +str(width)+ '}(\\s|$)' + '|\\S+?(\\s|$)';
+	t_output_array = []
+
+	t_source = source_str[:]
+
+	t_matcho = re.search(regstr, t_source, re.MULTILINE) 
+	while (t_matcho):
+		t_found_str = t_matcho.group(0)[:]
+		t_output_array.append(t_found_str)
+
+		t_source = t_source.replace(t_found_str,"")
+		t_matcho = re.search(regstr, t_source, re.MULTILINE) 
+
+	# pdb.set_trace();
+	return t_output_array
+
+
+def createJson(to):
+	toDict = {}
+
+	toDict["id_str"] = str(to.key.id())
+	toDict["status"] = "new"
+	toDict["author_nickname"] = to.author_nickname
+	toDict["ukFormattedCreateDateTime"] = to.ukFormattedCreateDateTime
+	toDict["title"] = to.title
+
+	# Iterate through and build up the text_lines item from the content ... remembering to record the line number(s):
+	content_str = to.content.replace("\n", " ")
+	content_str = content_str.replace("\r", " ")
+
+	line_list = word_wrap(content_str)
+	line_counter = 1
+	textLinesList = []
+	for line_item in line_list:
+		line_item_obj = {}
+		line_item_obj['line_number'] = str(line_counter)
+		line_item_obj['text'] = line_item
+		textLinesList.append(line_item_obj)
+		line_counter += 1
+
+	toDict["text_lines"] = textLinesList
+	return toDict
+
+
+# Create default textObject, just to make sure there's always one:
+def create_default(request):
+	createAndPutTextObject("Add your own text item", "Click 'Edit' above", "Roland Dunn", "roland.dunn@gmail.com", False)
+	return force_redirect_to_amn()
+
+
+def pull_data(request):
+	qry = TextObject.query().order(-TextObject.createDateTime)
+	tobjectslist = qry.fetch()
+
+	# Build list of jsonBlob's ...
+	jsonBlobList = []
+	for item in tobjectslist:
+		jsonBlobList.append(item.jsonBlob)
+
+
+	# Start to compile full JSON file ...: 
+	path_to_master_json = "%s/%s" % (os.getcwd(), textdisplay_settings.TD_MASTER_JSON)
+
+	# Try to open the master file. 
+	# This *clearly* would be better if reading from NDB.
+	try: 
+		f = open(path_to_master_json, 'r')
+	except IOError,e:
+		# Oh-oh. Failed to open file. Barf. 
+		errorMessage = "Failed to open: %s" % path_to_master_json
+		return HttpResponseServerError(errorMessage)
+	master_json = f.read()
+	f.close()
+
+	# Convert the master json template into a Python structure
+	master = json.loads(master_json)
+
+	# Load up the json Blobs:
+	master['tweets'] = jsonBlobList
+
+	# Output to json string:
+	outJson = json.dumps(master)
+
+	# Und, return to the browser: 
+	return HttpResponse(outJson, content_type="application/json")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

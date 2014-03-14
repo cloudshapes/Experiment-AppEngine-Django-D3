@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+	{% block title %}
+		404 Error. Couldn't find this URL. Sorry!
+	{% endblock %}
+
+
+	{% block metad %}
+		Sorry. 404 Error. Couldn't find this URL. Sorry!
+	{% endblock %}
+
+	{% block main_body %}
+		Sorry. 404 Error. Couldn't find this URL. Sorry!
+	{% endblock %}
+

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"
+      xmlns:fb="http://www.facebook.com/2008/fbml"
+      xmlns:og="http://ogp.me/ns#">
+<head lang=en>
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="description" content="{% block metad %}{% endblock %}" />
+	<link rel="stylesheet" href="/static/css/main.css" type="text/css" /> 
+	<!-- Include JavaScript here- though could include it at bottom of page for optimisation purposes: --->
+	<script src="/static/scripts/genutils.js"></script>
+	{% block extraheaderbits %}{% endblock %}
+</head>
+
+
+<body>
+ <div id="headerwrap">
+  <header id="pagehead" role="banner"> 
+   <nav role="navigation">
+    <ul>
+	<li><a href="/" title="readme">Home</a></li>
+	<li><a href="/readme/" title="readme">Readme</a></li>
+	<li><a href="/amn/" title="readme">Edit</a></li>
+	{% block extranav %}{% endblock %}
+    </ul>
+
+
+   </nav>
+   <a href="/"><img id="logo" src="/static/images/cloudshapes-logo.png" alt="CloudShapes.co.uk" width="478" height="64" /></a>
+  </header>
+
+ </div><!-- End of headerwrap-->
+
+ <div id="contentouterwrap">
+  <div id="contentinnerwrap">
+
+  {% block contentinnerwrap %}
+  <article>
+   <div id="content" role="main">
+     <header>
+	<div id="header-banner">
+	</div>
+     </header>
+
+	{% block main_body %}
+	{% endblock %}
+   </div>
+
+  </article><!-- End of the overall article -->
+  {% endblock %} <!-- End of b lock contentinnerwrap -->
+
+ </div><!-- End of content innerwrap-->
+  <div id="clearcontent" class="clear">&nbsp;</div>
+ </div><!-- End of content outerwrap-->
+
+ <div id="footerwrap">
+ </div><!-- End of footerwrap-->
+
+
+</body>
+</html>

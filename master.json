@@ -6,6 +6,20 @@
                 "/static/projects/experiment/sounds/fanfare-common-man.mp3",
                 "/static/projects/experiment/sounds/fanfare-common-man.ogg"
             ]
+        },
+        {
+            "name": "fanfare1",
+            "filenames": [
+                "/static/projects/experiment/sounds/trumpet-fanfare.mp3",
+                "/static/projects/experiment/sounds/trumpet-fanfare.ogg"
+            ]
+        },
+        {
+            "name": "fanfare2",
+            "filenames": [
+                "/static/projects/experiment/sounds/trumpet-fanfare2.mp3",
+                "/static/projects/experiment/sounds/trumpet-fanfare2.ogg"
+            ]
         }
     ],
     "properties": {
@@ -25,7 +39,7 @@
         "tf_no_action_timetowaitx": 10000,
         "tf_input_url_cto_sfsize": 20,
         "ntweets_to_render": 18,
-        "spit_out_timer": 4000,
+        "spit_out_timer": 5000,
         "tf_input_url_cto_colour": "#95c11f",
         "tf_textinput_button": "Show",
         "face_charge_range": 20,
@@ -39,7 +53,7 @@
     ],
     "faces": [
         {
-            "sound": "paxo",
+            "sound": "",
             "eyes": [
                 {
                     "pr": 2,
@@ -69,13 +83,22 @@
             "imgd": 80,
             "spit_out": [
                 {
-                    "sound": "",
-                    "text": "Oh joy, messages from my subjects",
+                    "sound": "fanfare1",
+                    "text": "HRH Salutes",
                     "colour": "#be1622",
                     "time": 3000,
                     "sfsize": 10,
                     "dir": "out"
+                },
+                {
+                    "sound": "fanfare2",
+                    "text": "Greetings",
+                    "colour": "#1116aa",
+                    "time": 3000,
+                    "sfsize": 10,
+                    "dir": "out"
                 }
+
             ],
             "bgnd_opacity": "0.75"
         }

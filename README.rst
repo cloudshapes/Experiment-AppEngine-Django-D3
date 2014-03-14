@@ -9,11 +9,15 @@ Setting Up:
 
 The code relies upon the Potato Djappengine (https://github.com/potatolondon/djappengine), so you need to set that up first. Let's say you install the Potato Djappengine in: 
 
+```
 /home/me/djappengine
+```
 
 The next step, is to clone this repository (i.e. the https://github.com/cloudshapes/Experiment-AppEngine-Django-D3.git repository), and place the resulting "textdisplay" folder in the djappengine folder. So you end up with: 
 
+```
 /home/me/djappengine/textdisplay/
+```
 
 Finally, you need to copy the "master.json" file into the "djappengine" folder, i.e. to /home/me/djappengine/master.json.
 At this point, you *should* be ready to go.

@@ -28,9 +28,7 @@ The next step, is to clone this repository (i.e. the https://github.com/cloudsha
 
 
 ```
-- url: /static
-  static_dir: textdisplay/static
-  expiration: '1m'
+static_dir: textdisplay/static
 ```
 
 
@@ -53,7 +51,7 @@ cd /home/me/djappengine
 
 7. Before you run anything else, you need to run: http://localhost:8080/amn/createdefault/. Running this locally you don't need a Google Account to login, you can just use the sample email that is suggested, but you will be prompted for a general site-wide username/password, which is "amn/p00t!".
 
-8. Once you've run "createdefault", you should then be able to use the site by requesting http://localhost:8080/. You should see two sample text items. At this point you should be able to edit the text items at http://localhost:8080/amn/.
+8. Once you've run "createdefault", you should then be able to use the site by requesting http://localhost:8080/. You should see two sample text items. At this point you should also be able to edit the text items at http://localhost:8080/amn/.
 
 
 

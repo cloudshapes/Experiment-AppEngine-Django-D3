@@ -9,7 +9,7 @@ var
 	C_DEFAULT_CURVY_TEXT = "Type Your Own Message Into the Input Box ...",
 	C_MAX_INPUT_LENGTH = 80,
 	C_FACE_NUDGE_TIMER = 3000,
-	C_TWEET_TIMER = 1000,
+	C_TWEET_TIMER = 500,
 	C_MAX_RENDERLIST_LENGTH = 2, // Max. number to hold in the render list.
 	C_MAX_TWITTERLIST_LENGTH = 500, // Max. number to hold in the twitter list.
 
@@ -60,7 +60,7 @@ var
 
 
 var	
-	C_PROGRESS_LOADING_JSON = "/static/projects/newsnight/json/progress.json",
+	C_PROGRESS_LOADING_JSON = "/static/projects/experiment/json/progress.json",
 	C_MASTER_JSON = "/pull/";
 
 

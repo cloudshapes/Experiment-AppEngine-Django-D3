@@ -7,12 +7,13 @@
 	{% block main_body %}
 		<h2>What Is This?</h2>
 		<p>A little demonstration app running on Google App Engine, using Django/Python as the framework, and using D3js to do the visualisation.</p>
-		<p><b>Please note:</b> best viewed in Chrome, IE and Safari. But not Firefox. Firefox isn't great with rendering SVG.</p>
+		<p><b>Please note:</b> best viewed on a Desktop in Chrome, IE and Safari. But not Firefox. Firefox isn't great with rendering SVG.</p>
 
 		<h2>What Can You Do?</h2>
 		<p>You can add/edit/delete bits of text at <a href="/amn/" title="Edit Pages">/amn/</a>. You'll need a Google account/login.</p>
 		<p>Once you've added/edited some text, the visualisation will eventually pull all text items and re-render them on screen. Usually takes around 1-2 mins at the most.</p>
-		<p>Please keep in mind that this is a demo. So, please try not to abuse this if you can. thanks.</p>
+		<p>Please keep in mind that this is a demo. So, please try not to abuse this if you can. Thanks.</p>
+		<p>There are two sample text items, one that includes Greek and Russian. These only appear if no other text items have been added.</p>
 
 		<h2>How Is It Built?</h2>
 		<ul>
@@ -23,7 +24,7 @@
 
 		<h2>Notes RE: Code / Other Notes:</h2>
 		<ul>
-			<li>The full source code is available here: TOCORRECT </li>
+			<li>The full source code is available here: <a href="https://github.com/cloudshapes/Experiment-AppEngine-Django-D3" title="https://github.com/cloudshapes/Experiment-AppEngine-Django-D3">https://github.com/cloudshapes/Experiment-AppEngine-Django-D3</a> </li>
 			<li>The code doesn't use the Django Class-Based views on the whole as they didn't appear to be setup to work with the Google AppEngine NDB (at least they didn't to me). Didn't want to spend endless periods of time wrestling with Google App Engine and NDB.</li>
 			<li>I used NDB as opposed to say <a href="https://developers.google.com/cloud-sql/" title="https://developers.google.com/cloud-sql/">https://developers.google.com/cloud-sql/</a> partly because I didn't wish to spend any money, but partly as I've not used NDB before (and I have used SQL or MySQL before), so wanted to try something new.</li>
 		</ul>

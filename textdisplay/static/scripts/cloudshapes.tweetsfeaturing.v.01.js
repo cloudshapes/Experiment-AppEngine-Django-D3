@@ -60,7 +60,7 @@ var
 
 
 var	
-	C_PROGRESS_LOADING_JSON = "/static/projects/newsnight/json/progress.json",
+	C_PROGRESS_LOADING_JSON = "/static/projects/experiment/json/progress.json",
 	C_MASTER_JSON = "/pull/";
 
 

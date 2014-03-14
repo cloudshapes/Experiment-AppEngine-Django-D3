@@ -1,4 +1,7 @@
 
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
 # Django
 from django.views.generic import TemplateView
 from django import forms
@@ -26,6 +29,8 @@ from datetime import datetime
 import re
 import json
 import os
+from textwrap import wrap
+
 
 import pdb
 
@@ -192,20 +197,17 @@ def delete_textobject(request, idval=None):
 def word_wrap(source_str):
 	width = textdisplay_settings.TD_COLUMN_WIDTH
 
-	regstr = '.{1,' +str(width)+ '}(\\s|$)' + '|\\S+?(\\s|$)';
 	t_output_array = []
 
-	t_source = source_str[:]
+	# First split on newlines:
+	lines_array = source_str.splitlines()
 
-	t_matcho = re.search(regstr, t_source, re.MULTILINE) 
-	while (t_matcho):
-		t_found_str = t_matcho.group(0)[:]
-		t_output_array.append(t_found_str)
+	# Then split on width:
+	for line in lines_array:
+		split_lines = wrap(line, width)
+		for split_line in split_lines:
+			t_output_array.append(split_line)
 
-		t_source = t_source.replace(t_found_str,"")
-		t_matcho = re.search(regstr, t_source, re.MULTILINE) 
-
-	# pdb.set_trace();
 	return t_output_array
 
 
@@ -220,10 +222,9 @@ def createJson(to):
 	toDict["title"] = to.title
 
 	# Iterate through and build up the text_lines item from the content ... remembering to record the line number(s):
-	content_str = to.content.replace("\n", " ")
-	content_str = content_str.replace("\r", " ")
-
+	content_str = to.content
 	line_list = word_wrap(content_str)
+
 	line_counter = 1
 	textLinesList = []
 	for line_item in line_list:
@@ -236,11 +237,6 @@ def createJson(to):
 	toDict["text_lines"] = textLinesList
 	return toDict
 
-
-# View to create default textObject, just to make sure there's always one:
-def create_default(request):
-	createAndPutTextObject("Add your own text item", "Click 'Edit' on the nav above", "Roland Dunn", "roland.dunn@gmail.com", False)
-	return force_redirect_to_amn()
 
 # View to pull list of all text objects: 
 def pull_data(request):
@@ -287,6 +283,25 @@ def pull_data(request):
 
 	# Und, return to the browser: 
 	return HttpResponse(outJson, content_type="application/json")
+
+
+# View to create default textObject, just to make sure there's always one:
+def create_default(request):
+	createAndPutTextObject("Add your own text item", "Click 'Edit' on the nav above", "Roland Dunn", "roland.dunn@gmail.com", False)
+	complex_text = "Sample English text\r\n\
+Sample Greek text: ἐσήγαγον διδασϰάλια\r\n\
+Sample Russian text:  ыччгвааааддд\r\n"
+
+	createAndPutTextObject("Example multi-lingual content", complex_text, "Roland Dunn", "roland.dunn@gmail.com", False)
+
+	return force_redirect_to_amn()
+
+# def createAndPutTextObject(title,content,nickname,email,editFlag):
+
+
+
+
+
 
 
 

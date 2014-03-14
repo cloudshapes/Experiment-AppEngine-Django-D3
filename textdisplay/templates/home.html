@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+
+	{% block title %}Demo of Editable Django/Python/D3 App Running on Google App Engine{% endblock %}
+	{% block metad %}AdministerApp that allows you to enter some text, and that periodically visualises the content using D3. And the Queen.{% endblock %}
+
+	{% block extraheaderbits %}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="/static/css/tweetsfeaturing.css" type="text/css" /> 
+		<link rel="stylesheet" href="/static/css/td.css" type="text/css" /> 
+
+		<script type="text/javascript" src="/static/scripts/d3.min.js"></script>
+		<script type="text/javascript" src="/static/scripts/howler.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.namespace.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.timer.v.01.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.soundmanager.v.01.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.generalutils.v.01.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.jsoncontainer.v.01.js"></script>
+		<script type="text/javascript" src="/static/scripts/csquadtree.js"></script>
+		<script type="text/javascript" src="/static/scripts/csforce.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.facesmanager.v.01.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.progressdisplay.v.01.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.tweetutils.v.01.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.tweetmanager.v.01.js"></script>
+		<script type="text/javascript" src="/static/scripts/cloudshapes.curvytextobjectmanager.v.01.js"></script>
+
+	{% endblock %}
+
+	{% block extranav %}
+	 	<li id="sound_button_li"><button id="sound_button"><img id="sound_button_image" src="/static/images/sound.png" /></button></li>
+	{% endblock %}
+
+
+
+	{% block main_body %}
+		<div id="tweets">
+		</div>
+
+		<script src="/static/scripts/cloudshapes.tweetsfeaturing.v.01.js"></script>
+	{% endblock %}
+
+
+
+

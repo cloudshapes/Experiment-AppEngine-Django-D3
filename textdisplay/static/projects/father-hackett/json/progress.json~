@@ -1,0 +1,20 @@
+{
+	"image_width_height":100,
+	"image_radius":50,
+	"image_bgnd":"#0000dd",
+	"image_bgnd_opacity":"0.75",
+	"image_scale":1,
+	"image_scaled_radius":50,
+	"image_loading_name":"Father Jack",
+	"image_loading_surname":"Hackett",
+	"image_left_eye":{"cx": -13,"cy": 4,"r": 5, "pr": 2, "eye_fill_opacity" : "0.36", "eye_fill" : "#ffffff", "pupilx": 0, "pupily": 0},
+	"image_right_eye":{"cx": 10,"cy": 3,"r": 5, "pr": 2, "eye_fill_opacity" : "0.36", "eye_fill" : "#ffffff", "pupilx": 0, "pupily": 0},
+	"image_loading_image":"/exp/tf/projects/father-hackett/images/hackett-s1.png",
+	"image_n_sections":3,
+	"image_section_array":["Loading Father Jack", "Loading Swearing", "Loading Tweets", ""],
+	"progress_quit_transition_time": 500,
+	"title": "Tweets Featuring Father Jack Hackett",
+	"sub_title": "Click \"Help\" (Above) for Instructions",
+	"waitForClickFlag": "y",
+	"waitText": "Click Anywhere To Start"
+}

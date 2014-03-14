@@ -1,0 +1,22 @@
+{
+	"image_width_height":100,
+	"image_radius":50,
+	"image_bgnd":"#0000dd",
+	"image_bgnd_opacity":"0.75",
+	"image_scale":1,
+	"image_scaled_radius":50,
+	"image_loading_name":"Jeremy",
+	"image_loading_surname":"Hunt",
+	"image_left_eye":{"cx": -6,"cy": -7,"r": 6, "pr": 2, "eye_fill_opacity" : "0.80", "eye_fill" : "#ffffff", "pupilx": 0, "pupily": 0},
+	"image_right_eye":{"cx": 18,"cy": -7,"r": 6, "pr": 2, "eye_fill_opacity" : "0.80", "eye_fill" : "#ffffff", "pupilx": 0, "pupily": 0},
+	"image_loading_image":"/exp/tf/projects/hunt-versus-nhs/images/jeremy-hunt-circular.png",
+	"image_n_sections":3,
+	"image_section_array":["Loading Hunt", "Loading #nhs Tweets", "Loading #lovetheNHS Tweets", ""],
+	"progress_quit_transition_time": 500,
+	"title": "Jeremy Hunt V #nhs & #lovetheNHS Tweets",
+	"sub_title": "For Instructions and Help Click the\"?\" (Above)",
+	"waitForClickFlag": "y",
+	"waitText": "Click Anywhere To Start"
+}
+
+

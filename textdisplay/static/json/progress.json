@@ -1,0 +1,21 @@
+{
+	"image_width_height":100,
+	"image_radius":50,
+	"image_bgnd":"#0000dd",
+	"image_bgnd_opacity":"0.75",
+	"image_scale":1,
+	"image_scaled_radius":50,
+	"image_loading_name":"Jeremy",
+	"image_loading_surname":"Paxman",
+	"image_left_eye":{"cx": -17,"cy": -5, "r": 6, "pr": 2, "eye_fill_opacity" : "0.85", "eye_fill" : "#eeeeee", "pupilx": 0, "pupily": 0},
+	"image_right_eye":{"cx": 6,"cy": -5, "r": 6, "pr": 2, "eye_fill_opacity" : "0.85", "eye_fill" : "#eeeeee", "pupilx": 0, "pupily": 0},
+	"image_loading_image":"/exp/tf/projects/newsnight/images/paxo.png",
+	"image_n_sections":3,
+	"image_section_array":["Loading Paxman & Wark", "Loading Esler & Maitlis", "Loading #newsnight Tweets", ""],
+	"progress_quit_transition_time": 500,
+	"title": "Newsnight Presenters & #newsnight Tweets",
+	"sub_title": "For Instructions and Help Click the\"?\" (Above)",
+	"waitForClickFlag": "y",
+	"waitText": "Click Anywhere To Start"
+}
+

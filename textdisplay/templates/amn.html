@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+	{% block title %}Create, Edit and Delete Text Display Items{% endblock %}
+	{% block metad %}Administer text display items. Items will be displayed periodically on the main page ... just edit and wait{% endblock %}
+
+	{% block main_body %}
+			<p><a href="/amn/edit/" title="Create Text Display Item">Create Text Display Item</a></p>
+
+			<table class="to_list">
+				<tr>			 
+					<th>Title</th>
+					<th>Date Created</th>
+					<th>Edited By:</th>
+					<th></th>
+					<th></th>
+				</tr>
+
+			{% for tobject in tobjectslist %}
+				<tr>			 
+					<td>{{ tobject.title }}</td>
+					<td>{{ tobject.ukFormattedCreateDateTime }}</td>
+					<td>{{ tobject.author_nickname }}</td>
+					<td><a href="/amn/edit/{{ tobject.key.id }}/" title="Edit">Edit</a></td>
+					<!--- <td><a href="/amn/delete/{{ tobject.key.id }}/" title="Delete">Delete</a></td> -->
+					<td><a href="javascript:deleteTD('{{ tobject.title }}', '/amn/delete/{{ tobject.key.id }}/');" title="Delete">Delete Fn</a></td>
+				</tr>
+			{% endfor %}
+			</table>
+	{% endblock %}
+
+

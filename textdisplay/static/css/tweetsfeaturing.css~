@@ -1,0 +1,226 @@
+
+
+
+button#sound_button {display:none;font-size:0.8em;vertical-align:middle;padding:0;margin:0;border:0;background-color:transparent;}
+button#sound_button img {border:0;margin:0;margin-top:4px;padding:0;vertical-align:middle;}
+button#sound_button:hover {cursor: pointer;}
+
+#header-banner {float:left; background: #dddedd;width:100%}
+
+
+
+#contentinnerwrap{margin:0em 0em 0em 0em;width:100%; padding:0 0em 0 0em;clear:both;}
+#content p.dek {font-size:0.9em;line-height:1.375em;margin-bottom:0.125em; color:#777;font-weight:bold;font-style:italic;}
+
+
+footer#pagefooter{margin:0em 0em 0em 0em;padding:0em 0 0.2em 0;height:100%;}
+
+#content{width:100%;float:left}
+#content h1 {margin-bottom:0.1em;}
+#content h2 {font-size:1.125em;line-height:1.1111em;margin-bottom:0.2em;font-weight:bold}
+#content p {font-size:0.8125em;line-height:1.54em;margin-bottom:0.2em; width:60em;}
+
+footer p#copyright{font-size:0.55em;clear:both;float:left;color:#b3b3b3;margin-top:0.2em}
+footer#pagefooter nav li a {font-size:0.55em;color:#b3b3b3}
+footer#pagefooter nav ul{float:right;margin-top:0em}
+
+/* ....  END OF MAIN STYLING   .... */
+
+
+path{
+	fill: none;
+	stroke: #444;
+	shape-rendering: crispEdges;
+}
+
+
+.g_mainsvg {background: #fff;border: 0px solid #00f;overflow: hidden;}
+.g_mainsvg text.jsonloaderror{fill: red; font-family: Verdana, sans-serif;}
+
+
+g.g_csface_ { cursor: pointer; cursor: hand;	}
+.object_circle {fill: #2ca02c;stroke:#028;stroke-width:2;}
+
+
+.progressdisplay_g text.pclass {fill: #999; font-family: Verdana, sans-serif;font-size: 0.5em;}
+.progressdisplay_g text#pclass3.pclass  {fill: #000; font-family: Verdana, sans-serif;font-size: 1.5em;}
+
+.progressdisplay_g text.pclass_title {fill: #333; font-family: Verdana, sans-serif;font-size: 2em;font-weight:bold;}
+.progressdisplay_g text.pclass_subtitle {fill: #000; font-family: Verdana, sans-serif;font-size: 1em;font-weight:bold;}
+
+
+/* User details classes: */
+tspan.text_user_details_tspan {
+	font-family: verdana, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	fill:#009fe3;
+}
+
+a.text_user_details_link{
+	font-family: verdana, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	fill:#009fe3;
+	text-decoration:none;
+}
+
+a.text_user_details_link:hover{
+	font-family: verdana, sans-serif;
+	font-weight: bold;
+	fill:#009fe3;
+	text-decoration:underline;
+}
+
+
+
+
+/* Tweet text classes: */
+g.tweet_g { cursor: pointer; cursor: hand;	}
+
+tspan.tweet_text_tspan {
+	fill:#a55;
+	font-size: 0.8em;
+}
+
+tspan.tweet_text_title {
+	fill:#f00;
+	font-size: 0.8em;
+}
+
+
+tspan.tweet_keyword_higlight {
+	fill:#f00;
+	font-size: 0.8em;
+}
+
+
+a.tweet_text_link	{
+	font-size: 0.8em;
+	fill:#009fe3;
+	text-decoration:none;
+}
+
+a.tweet_text_link:hover	{
+	font-size: 0.8em;
+	fill:#009fe3;
+	text-decoration:underline;
+}
+
+a.tweet_text_link2	{
+	font-size: 0.8em;
+	fill:#009fe3;
+	text-decoration:none;
+}
+
+a.tweet_text_link2:hover	{
+	font-size: 0.8em;
+	fill:#009fe3;
+	text-decoration:underline;
+}
+
+
+
+
+
+/* Datetime detail classes: */
+tspan.datetime_details {
+}
+
+a.datetime_details_link{
+	font-family: verdana, sans-serif;
+	font-weight: bold;
+	fill:#8d8d8c;
+	font-size: 0.6em;
+	text-decoration:none;
+}
+
+a.datetime_details_link:hover{
+	font-family: verdana, sans-serif;
+	font-weight: bold;
+	fill:#8d8d8c;
+	font-size: 0.6em;
+	text-decoration:underline;
+}
+
+tspan.text_datetime_details_tspan {
+	font-family: verdana, sans-serif;
+	font-weight: bold;
+	fill:#8d8d8c;
+	font-size: 0.5em;
+	text-decoration:none;
+}
+
+
+
+
+/* Background rect: */
+rect.tweet_background_rect	{
+	rx:5;
+	ry:5;
+	stroke:#7c7c7c; /* d7d7d7 */
+	fill: #ffffff;
+	opacity: 0.7;
+}
+
+
+
+/* Curvy text styles: */
+text.cs_curvy_measuretext	{
+	font-family:Verdana;
+	font-weight:bold;
+	white-space:pre;
+}
+
+
+.cs_curvy_text {
+	pointer-events: none;
+}
+
+.cs_g_mainsvg {background: #ddd;border: 1px solid #00f;}
+.cs_curvy_textpath {
+	font-family:Verdana;
+	font-weight:bold;
+	white-space:pre;
+}
+
+
+/* Helpbox overlay styling */
+#tweetsf_help_content_container {}
+
+
+#tweetsf_help_content {font-family: Verdana, sans-serif;padding:10px; background:#fff;}
+#tweetsf_help_content h2{font-size:1.1em;margin:0.5em 0 0 0;}
+#tweetsf_help_content h2.centre_pos{text-align: center; font-size:1em;margin:1em 0 0 0;}
+
+#tweetsf_help_content h3{font-size:1em;margin:1.2em 0 0 0;}
+#tweetsf_help_content p{font-size:0.85em;margin:0.5em 0 0 0;}
+#tweetsf_help_content p.centre_pos{font-size:0.85em;margin:0.5em 0 0 0;text-align:center;}
+
+#tweetsf_help_content a:link{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+#tweetsf_help_content a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;} 
+
+#tweetsf_help_content img.in_text{display:inline-block;vertical-align:top;margin:0;}
+#tweetsf_help_content img.centre_pos{display: block; margin: 0 auto;}
+
+#tweetsf_help_content ul {font-size:1em;margin:0em 0 0 0;}
+#tweetsf_help_content li {font-size:0.85em;margin:0em 0 0 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

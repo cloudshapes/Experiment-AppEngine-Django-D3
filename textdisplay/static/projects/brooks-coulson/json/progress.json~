@@ -1,0 +1,15 @@
+{
+	"image_width_height":80,
+	"image_bgnd":"#0000dd",
+	"image_bgnd_opacity":"0.75",
+	"image_scale":1,
+	"image_loading_name":"Rebekah",
+	"image_loading_surname":"Brooks",
+	"image_left_eye":{"cx": -9,"cy": 1,"r": 5, "pr": 2, "eye_fill_opacity" : "0.85", "eye_fill" : "#eeeeee", "pupilx": 0, "pupily": 0},
+	"image_right_eye":{"cx": 10,"cy": 3,"r": 5, "pr": 2, "eye_fill_opacity" : "0.85", "eye_fill" : "#eeeeee", "pupilx": 0, "pupily": 0},
+	"image_loading_image":"projects/brooks-coulson.html/images/rebekah-brooks.png",
+	"image_n_sections":3,
+	"image_section_array":["Loading Brooks & Coulson", "Loading Cameron", "Loading Tweets"]
+}
+
+

@@ -19,7 +19,12 @@ The next step, is to clone this repository (i.e. the https://github.com/cloudsha
 /home/me/djappengine/textdisplay/
 ```
 
-Finally, you need to copy the "master.json" file into the "djappengine" folder, i.e. to /home/me/djappengine/master.json.
+You need to copy the "master.json" file into the "djappengine" folder, i.e. to /home/me/djappengine/master.json.
+
+
+Next up, you need to amend the app.yaml file at /home/me/djappengine/app.yaml:- you need to copy the "static" handler from the Experiment-AppEngine-Django-D3.git repository app.yaml into the app.yaml found at /home/me/djappengine/app.yaml.
+
+
 At this point, you *should* be ready to go.
 
 From the command line type:
@@ -29,7 +34,7 @@ cd /home/me/djappengine
 ```
 
 ```
-./serve &
+./serve.sh &
 ```
 
 
